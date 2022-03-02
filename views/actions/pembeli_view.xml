@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- penjualan_kue.pembeli tree view -->
+<record id="pembeli_view_tree" model="ir.ui.view">
+    <field name="name">Daftar Pembeli</field>
+    <field name="model">penjualan_kue.pembeli</field>
+    <field name="arch" type="xml">
+        <tree>
+            <!-- Add your fields here -->
+             <field name="nama_pembeli"/>
+            <field name="no_telp"/>
+            <field name="alamat"/>
+        </tree>
+    </field>
+</record>
+
+<!-- penjualan_kue.pembeli form view -->
+<record id="pembeli_view_form" model="ir.ui.view">
+    <field name="name">Pembeli Form</field>
+    <field name="model">penjualan_kue.pembeli</field>
+    <field name="arch" type="xml">
+        <form string="">
+            <sheet>
+                <group>
+                    <!-- Add your fields here -->
+                    <field name="nama_pembeli"/>
+                    <field name="no_telp"/>
+                    <field name="alamat"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
+</record>
+
+    <!-- penjualan_kue.pembeli action window -->
+    <record id="pembeli_action" model="ir.actions.act_window">
+        <field name="name">Atur Pembeli</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">penjualan_kue.pembeli</field>
+        <field name="view_mode">tree,form</field>        
+    </record>
+
+</odoo>

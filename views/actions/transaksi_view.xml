@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- penjualan_kue.transaksi tree view -->
+<record id="transaksi_view_tree" model="ir.ui.view">
+    <field name="name">Daftar Transaksi</field>
+    <field name="model">penjualan_kue.transaksi</field>
+    <field name="arch" type="xml">
+        <tree>
+            <!-- Add your fields here -->
+            <field name="produk_ids"/>
+            <field name="kuantitas"/>
+            <field name="pembeli"/>
+            <field name="total_beli"/>
+            <field name="kembalian"/>
+        </tree>
+    </field>
+</record>
+
+<!-- penjualan_kue.transaksi form view -->
+<record id="transaksi_view_form" model="ir.ui.view">
+    <field name="name">penjualan_kue.transaksi.view.form</field>
+    <field name="model">penjualan_kue.transaksi</field>
+    <field name="arch" type="xml">
+        <form string="Atur Pembeli">
+            <header>
+            <!-- kosongkan semua fields, logic-nya ada di model dengan method clear_all_fields() -->
+                <button name="clear_all_fields" type="object" string="Batal"/>
+            </header>
+            <sheet>
+                <group>
+                    <field name="produk_ids"/>
+                    <field name="kuantitas"/>
+                </group>
+                <group>
+                    <field name="pembeli"/>
+                </group>
+                <group>
+                    <field name="total_beli"/>
+                    <field name="uang_bayar"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
+</record>
+
+    <!-- penjualan_kue.transaksi action window -->
+    <record id="transaksi_action" model="ir.actions.act_window">
+        <field name="name">Atur Transaksi</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">penjualan_kue.transaksi</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

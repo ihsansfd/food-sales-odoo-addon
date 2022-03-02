@@ -1,0 +1,5 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_penjualan_kue_produk,access_penjualan_kue_produk,model_penjualan_kue_produk,base.group_user,1,1,1,1
+access_penjualan_kue_resep,access_penjualan_kue_resep,model_penjualan_kue_resep,base.group_user,1,1,1,1
+access_penjualan_kue_pembeli,access_penjualan_kue_pembeli,model_penjualan_kue_pembeli,base.group_user,1,1,1,1
+access_penjualan_kue_transaksi,access_penjualan_kue_transaksi,model_penjualan_kue_transaksi,base.group_user,1,1,1,1
