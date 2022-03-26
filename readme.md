@@ -13,29 +13,22 @@ Simple Odoo module (addon) to make point of sales of foods
 
 ### API
 
-#### **Base URL**
+#### **Endpoint**
 `localhost:{PORT}/api/product/`
 
-#### **Method**
+##### **Method**
 `GET`
 
-#### **Auth**
+##### **Auth**
 `Public`
 
-#### **Request Type**
-`http`
-
-
-#### **Response Type**
-`json/application`
-
-#### **Path Parameters**
+##### **Path Parameters**
 
 | Parameter | Type | Description |
 | - | -  | - |
 | `{id}` |  Integer  |   ID of product  |
 
-#### **Query Parameters**
+##### **Query Parameters**
 Use this to filter your query. All of them are optional and make use of "AND" operator.
 
 | Parameter | Type | Description |
@@ -44,11 +37,11 @@ Use this to filter your query. All of them are optional and make use of "AND" op
 | `category`      |   String    |   Product's category    |
 | `active`      |   Boolean    |    Is product archived (inactive) or not (active)?    |
 
-#### **Success Response**
+##### **Success Response**
 Data is found:
 ```json
 {
-    "code": 400,
+    "code": 200,
     "found": true,
     "data": [
         {
@@ -65,7 +58,7 @@ Data is found:
 Data is not found:
 ```json
 {
-    "code": 400,
+    "code": 200,
     "found": false,
     "data": []
 }

@@ -23,5 +23,5 @@ class ProductController(http.Controller):
             res.append({'id': data.id, 'name': data.name, 'price': data.price, 'desc': data.desc,
                         'category': data.category})
 
-        return request.make_response(json.dumps({'code': 400, 'found': True if res else False, 'data': res}),
+        return request.make_response(json.dumps({'code': 200, 'found': True if res else False, 'data': res}),
                                      [('Content-Type', 'application/json')])
