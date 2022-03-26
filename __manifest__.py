@@ -1,21 +1,24 @@
 {
-    'name': 'Penjualan Kue',
+    'name': 'Food Sales',
     'version': '1.0',
-    'description': 'Module tentang Point of Sales Kue',
-    'summary': '',
-    'author': 'Ihsan Nurul Iman',
+    'description': 'Module to make point of sales of foods',
+    'summary': 'Module to make point of sales of foods',
+    'author': 'IhsanSFD',
     'website': 'ihsansfd.github.io',
-    'category': 'Business',
+    'category': 'Sales',
     'depends': [
-        'base'
+        'base','mail'
     ],
     'data': [
-        'views/actions/produk_view.xml',
-        'views/actions/resep_view.xml',
-        'views/actions/pembeli_view.xml',
-        'views/actions/transaksi_view.xml',
+        'views/actions/product_view.xml',
+        'views/actions/recipe_view.xml',
+        'views/actions/customer_view.xml',
+        'views/actions/order_view.xml',
         'views/menus/main_menu.xml',
-        'security/ir.model.access.csv'
+        'report/template.xml',
+        'report/order_report.xml',
+        'security/ir.model.access.csv',
+        'data/sequence.xml'
     ],
     'application': True
 }

@@ -2,25 +2,24 @@
 <odoo>
 
     <menuitem
-        id="produk_root_menu"
-        name="Penjualan Kue">
+        id="product_root_menu"
+        name="Food Sales">
         <menuitem
-            id="produk_menu"
-            name="Produk"
-            action="produk_action"/>
-
+            id="product_menu"
+            name="Product"
+            action="product_action"/>
         <menuitem
-            id="resep_menu"
-            name="Resep"
-            action="resep_action"/>
+            id="recipe_menu"
+            name="Recipe"
+            action="recipe_action"/>
         <menuitem
-            id="pembeli_menu"
-            name="Pembeli"
-            action="pembeli_action"/>
+            id="customer_menu"
+            name="Customer"
+            action="customer_action"/>
         <menuitem
-            id="transaksi_menu"
-            name="Transaksi"
-            action="transaksi_action"/>
+            id="order_menu"
+            name="Order"
+            action="order_action"/>
     </menuitem>
 
 </odoo>
