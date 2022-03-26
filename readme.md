@@ -1,5 +1,5 @@
 ### Description
-Simple module (addon) to make point of sales of foods
+Simple Odoo module (addon) to make point of sales of foods
 
 ### CRUD
 - Product
@@ -36,13 +36,13 @@ Simple module (addon) to make point of sales of foods
 | `{id}` |  Integer  |   ID of product  |
 
 #### **Query Parameters**
-Use this to filter your query
+Use this to filter your query. All of them are optional and make use of "AND" operator.
 
 | Parameter | Type | Description |
 | - | -  | - |
 | `name`      |   String    |    Product's name    |
 | `category`      |   String    |   Product's category    |
-| `Active`      |   Boolean    |    Is product archived (inactive) or not (active)?    |
+| `active`      |   Boolean    |    Is product archived (inactive) or not (active)?    |
 
 #### **Success Response**
 Data is found:
